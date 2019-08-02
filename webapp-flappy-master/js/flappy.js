@@ -69,7 +69,7 @@ function create() {
  labelScore=game.add.text(700, 50, "0");
 
     // set the game colour of the scene
-  game.input.onDown.add(clickHandler);
+  //game.input.onDown.add(clickHandler);
 
  game.input.keyboard
  .addKey(Phaser.Keyboard.SPACEBAR)
