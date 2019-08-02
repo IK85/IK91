@@ -186,8 +186,8 @@ function generatePipe() {
  // }
    var gapStart = game.rnd.integerInRange(gapMargin, height - gapSize - gapMargin);
    addPipeEnd(width - (pipeEndExtraWidth / 2), gapStart);
-   for(var y = gapStart - pipeEndHeight; y > 0; y -= blockHeight) {
-   addPipeBlock(width, y - blockHeight/2);
+   for(var y = gapStart; y > 0; y -= blockHeight) {
+   addPipeBlock(width, y - blockHeight);
    }
    addPipeEnd(width - (pipeEndExtraWidth / 2), gapStart + gapSize);
    for(var y = gapStart + gapSize + pipeEndHeight; y < height; y += blockHeight) {
